@@ -1,0 +1,162 @@
+.center-header{
+      color: rgb(255, 255, 255);
+      text-align: center;
+      background-color: rgb(32, 30, 68);  
+      margin: 0; 
+      width: 100vw; 
+      padding: 0%;
+      box-sizing: border-box;
+  }
+  
+  .top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgb(32, 30, 68);
+  margin: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 19px; 
+}
+
+.top-bar .right a {
+  margin-right: 15px; /* This moves the links a bit to the left */
+  text-decoration: none;
+  color: white; /* Ensures the links are white */
+  padding: 0 10px; /* Adds padding to the left and right of each link */
+}
+
+
+  .bar-pic{
+    border-radius: 75%; /* makes it perfectly circular */
+    object-fit: cover;  /* ensures content fits in the circle */
+    margin-top: 20x;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .mid-pic{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: none;
+    
+  }
+  .about-pic{
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .Resume-button{
+    padding: 4px 10px;
+    border-radius: 999px;
+    height: 43px;
+    width: 100px;
+    background-color: rgb(226, 96, 122);
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    
+  }
+
+  .Resume-button:hover{
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18)
+  }
+  .footer{
+    background-color: rgb(32, 30, 68); 
+    color: white;
+    text-align: center;
+    position: static;
+    margin-top: auto;
+    min-height: 100vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .body {
+  margin: 0;
+  min-height: 100vh; /* Full height of screen */
+  display: flex;
+  flex-direction: column;
+}
+
+.intro{
+
+  border: 1px solid #ccc;            /* Optional thin border */
+  padding: 15px;                     /* Space inside the box */
+  background-color: white;           /* Box color */
+  border-radius: 8px;                 /* Rounded corners */
+  
+  /* Shadow: offset-x, offset-y, blur-radius, spread-radius, color */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.experience-container {
+  display: flex;
+  gap: 20px;
+}
+.experience-box {
+  flex: 1;
+  padding: 30px;
+  background: #f3f3f3;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  transition: box-shadow 0.2s;
+}
+.experience-box:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+
+.project-container {
+  display: flex;
+  gap: 20px;
+}
+.project-box {
+  flex: 1;
+  padding: 30px;
+  background: #f3f3f3;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  transition: box-shadow 0.2s;
+}
+.project-box:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.achievements-container {
+  display: flex;
+  gap: 20px;
+}
+.achievements-box {
+  flex: 1;
+  padding: 30px;
+  background: #f3f3f3;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  transition: box-shadow 0.2s;
+  margin-bottom: 25px;
+}
+.achievements-box:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .container { flex-direction: column }
+  .left, .right { width: 100%; margin: 0 }
+}
+
+section {
+  padding-top: 75px; /* Adjust this value to the height of your header + desired spacing */
+  margin-top: -75px; /* Must be the negative of the padding-top value */
+}
